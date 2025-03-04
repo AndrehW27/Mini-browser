@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-browser</title>
 
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" id="faveIconId" type="image/x-icon">
 
     <link rel="stylesheet" href="styles.css">   
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
-    <container class="container">
-
+    <container class="container" id="containerId">
         <div class="tabs">
             <div class="original-tab">                     
                 <div class="left-group">
-                    <img class="img-icon" src="./assets/icon-tab.png" alt="Back" />                   
-                    <p>Mini-browser</p>
+                    <img class="img-icon" id="tabIconId" src="./assets/icon-tab.png" alt="Back" />                   
+                    <p id="titleId">Google</p>
                 </div>         
                 <button onclick="closeTab()" class="btn-close-tab">
                     <img class="img" src="./assets/close.png" alt="Back" /> 
@@ -52,22 +51,26 @@
             <button onclick="goHome()" class="btn">
                 <img class="img" src="./assets/home.png" alt="Back" /> 
             </button>
-            <div class="url">
-                <input type="text" class="url-input" placeholder="Pesquisar ou digitar URL">
+            <div class="url" >
+                <input id="urlInputId" type="text" class="url-input" placeholder="Pesquisar ou digitar URL">
             </div>
-            <div class="history">
+            <!-- <div class="history">
                 <button onclick="newTab()" class="btn">
                     <img class="img" src="./assets/add.png" alt="Back" /> 
                 </button>                
-            </div>
+            </div> -->
             <div class="history">
-                <button onclick="history()" class="btn">
+                <button onclick="seeHistory()" class="btn">
                     <img class="img" src="./assets/history.png" alt="Back" /> 
                 </button>                
             </div>
         </div>
         <div class="content">
-            <img class="img-site" src="./assets/google-search.png" alt="Google search">
+            <img class="img-site" id="contentImgId" src="./assets/google-search.png" alt="Google search">
+        </div>
+        <div class="history-list" id="historyListId">
+            <p>https://www.google.com/1231231231123123</p>
+            <p>https://www.google.com/123123123112312</p>
         </div>
     </container>
 
