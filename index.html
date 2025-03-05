@@ -62,16 +62,25 @@
             <div class="history">
                 <button onclick="seeHistory()" class="btn">
                     <img class="img" src="./assets/history.png" alt="Back" /> 
-                </button>                
+                </button>   
+                <button onclick="popHistory()" class="btn-limpar">
+                    <p>pop</p>
+                </button>     
+                <button onclick="clearHistory()" class="btn-limpar">
+                    <p>clear</p>
+                </button>               
             </div>
         </div>
         <div class="content">
             <img class="img-site" id="contentImgId" src="./assets/google-search.png" alt="Google search">
         </div>
         <div class="history-list" id="historyListId">
-            <p>https://www.google.com/1231231231123123</p>
-            <p>https://www.google.com/123123123112312</p>
+            <!-- <div class="history-item">
+                <p class="history-site" id="historySiteId">https://www.google.com/1231231231123123</p>
+                <p class="hora" id="historyHourId">2 horas atrás</p>
+            </div> -->
         </div>
+        
     </container>
 
     <script src="script.js"></script>

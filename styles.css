@@ -37,12 +37,11 @@ body {
 }
 
 .history{
-    display: flex;
+    /* width: 100%; */
     margin-left: auto;
-}
-
-.history .btn{
-    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .window-controls{
@@ -143,8 +142,7 @@ body {
 .btn {
     background-color: rgb(76, 76, 76); /* Blue color */
     border: none;
-    padding: 6px 6px;
-    margin: 0px 6px;
+    padding: 8px 8px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Aligns icon and text */
@@ -227,7 +225,7 @@ body {
     position: absolute;
     top: 13%;
     right: 0;
-    height: 300px;
+    /* height: 300px; */
     width: 200px;
     background-color: rgb(76, 76, 76);
     display: flex;
@@ -236,15 +234,41 @@ body {
     align-items: flex-start;
     visibility: hidden;
     color: white;
+    /* transition: visibility 1s; */
+}
+
+.history-item{
+    max-width: 90%;
     overflow-x: hidden;
 }
 
-.history-list p:first-child{
-    margin-top: 12px;
+.history-site{
+    margin: 8px 8px 4px 12px;
+    font-size: 12px;   
 }
 
-.history-list p {
-    margin: 8px 8px 8px 12px;
-    font-size: 12px;
-    max-width: 50px;
+.hora{
+    font-size: 10px;
+    margin: 0px 0px 12px 12px;
+}
+
+.limpar-history{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-limpar {
+    background-color: rgb(76, 76, 76); /* Blue color */
+    border: none;
+    padding: 6px 6px;
+    margin: 6px;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-limpar:hover {
+    background-color: rgb(112, 112, 112); /* Darker blue on hover */
 }
